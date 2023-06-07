@@ -18,6 +18,11 @@ import {
   rubyrails,
   graphql,
   komikult,
+  vistajet,
+  genki,
+  vodafone,
+  globo,
+  cvc,
   leaderboard,
   math,
   movie,
@@ -48,14 +53,6 @@ const services = [
   {
     title: 'Frontend Developer',
     icon: frontend,
-  },
-  {
-    title: 'Backend Developer',
-    icon: backend,
-  },
-  {
-    title: 'UI/UX Design',
-    icon: ux,
   },
   {
     title: 'Software Prototyping',
@@ -89,32 +86,16 @@ const technologies = [
     icon: redux,
   },
   {
-    name: 'Tailwind CSS',
-    icon: tailwind,
-  },
-  {
     name: 'Node JS',
     icon: nodejs,
   },
   {
-    name: 'Rails',
-    icon: rubyrails,
-  },
-  {
-    name: 'graphql',
+    name: 'GraphQL',
     icon: graphql,
-  },
-  {
-    name: 'postgresql',
-    icon: postgresql,
   },
   {
     name: 'git',
     icon: git,
-  },
-  {
-    name: 'figma',
-    icon: figma,
   },
   {
     name: 'docker',
@@ -124,63 +105,92 @@ const technologies = [
 
 const experiences = [
   {
-    title: 'Front-End Developer',
-    company_name: 'Cover Hunt',
+    title: 'Full Stack Developer',
+    company_name: 'Virgos IP Solutions',
     icon: coverhunt,
     iconBg: '#333333',
-    date: 'Aug 2021 - Feb 2022',
-  },
-  {
-    title: 'Mentor (Volunteer)',
-    company_name: 'Microverse',
-    icon: microverse,
-    iconBg: '#333333',
-    date: 'Mar 2022 - May 2022',
-  },
-  {
-    title: 'Junior Software Engineer',
-    company_name: 'Kelhel',
-    icon: kelhel,
-    iconBg: '#333333',
-    date: 'May 2022 - Oct 2022',
+    date: 'May 2015 - Out 2015',
   },
   {
     title: 'Full Stack Developer',
-    company_name: 'Diversity Cyber Council',
-    icon: dcc,
+    company_name: 'Runweb Desenvolvimento de Sistemas',
+    icon: coverhunt,
     iconBg: '#333333',
-    date: 'Sep 2022 - Present',
+    date: 'Nov 2015 - Jul 2017',
+  },
+  {
+    title: 'Front End Developer',
+    company_name: 'Monitora Solucoes Tecnologicas',
+    icon: kelhel,
+    iconBg: '#333333',
+    date: 'Jul 2017 - Apr 2019',
+  },
+  {
+    title: 'Front End Developer',
+    company_name: 'Liber Capital ',
+    icon: kelhel,
+    iconBg: '#333333',
+    date: 'Apr 2019 - Set 2019',
+  },
+  {
+    title: 'Front End Developer',
+    company_name: 'CVC CORP ',
+    icon: kelhel,
+    iconBg: '#333333',
+    date: 'Set 2019 - Feb 2021',
+  },
+  {
+    title: 'Front End Developer',
+    company_name: 'Globo ',
+    icon: kelhel,
+    iconBg: '#333333',
+    date: 'Feb 2021 - Jul 2022',
+  },
+  {
+    title: 'Front End Developer',
+    company_name: 'Capgemini Engineering',
+    icon: kelhel,
+    iconBg: '#333333',
+    date: 'Jul 2022 - Present',
   },
 ];
 
 const projects = [
   {
     id: 'project-1',
-    name: 'KomiKult',
-    description: 'A comic characters list app that displays Marvel characters.',
+    name: 'VistaJet',
+    description: 'VistaJet is a global business aviation company. The firm flies between any two points, under a "pay for hours flown" fare structure.',
+    tags: [
+      {
+        name: 'react',
+        color: 'blue-text-gradient',
+      },
+    ],
+    image: vistajet,
+    demo: 'https://www.vistajet.com/',
+  },
+  {
+    id: 'project-2',
+    name: 'globo.com',
+    description: 'This is the most accessed news portal in Brazil',
     tags: [
       {
         name: 'react',
         color: 'blue-text-gradient',
       },
       {
-        name: 'mongodb',
-        color: 'green-text-gradient',
-      },
-      {
-        name: 'tailwind',
+        name: 'scss',
         color: 'pink-text-gradient',
       },
     ],
-    image: komikult,
-    repo: 'https://github.com/shaqdeff/KomiKult',
-    demo: 'https://shaqdeff.github.io/KomiKult/',
+    image: globo,
+    demo: 'https://www.globo.com/',
   },
   {
-    id: 'project-2',
-    name: 'Leaderboard',
+    id: 'project-3',
+    name: 'CVC Corp',
     description:
-      'A leaderboard list app that displays scores submitted by different players.',
+      'CVC CORP is a holding of companies in the tourism sector.',
     tags: [
       {
         name: 'react',
@@ -195,76 +205,51 @@ const projects = [
         color: 'pink-text-gradient',
       },
     ],
-    image: leaderboard,
-    repo: 'https://github.com/shaqdeff/Leaderboard',
-    demo: 'https://shaqdeff.github.io/Leaderboard/',
-  },
-  {
-    id: 'project-3',
-    name: 'Math Magicians',
-    description: 'This is a single-page calculator app built with React',
-    tags: [
-      {
-        name: 'nextjs',
-        color: 'blue-text-gradient',
-      },
-      {
-        name: 'supabase',
-        color: 'green-text-gradient',
-      },
-      {
-        name: 'css',
-        color: 'pink-text-gradient',
-      },
-    ],
-    image: math,
-    repo: 'https://github.com/shaqdeff/Math-Magicians',
-    demo: 'https://inspiring-medovik-37d3b3.netlify.app/',
+    image: cvc,
+    demo: 'https://www.cvc.com.br/pacotes-turisticos',
   },
   {
     id: 'project-4',
-    name: 'Movie Metro',
-    description: `A single-page application that allows users to search for any movie or show's ratings and its details.`,
+    name: 'Vodafone',
+    description: `Vodafone is a multinational mobile operator and currently has interests in 25 countries and partner networks in over 42 countries.`,
     tags: [
       {
-        name: 'nextjs',
+        name: 'react',
         color: 'blue-text-gradient',
       },
       {
-        name: 'supabase',
+        name: 'graphql',
         color: 'green-text-gradient',
       },
       {
-        name: 'css',
+        name: 'scss',
         color: 'pink-text-gradient',
       },
     ],
-    image: movie,
-    repo: 'https://github.com/shaqdeff/Movie-Metro',
-    demo: 'https://movie-metro.netlify.app/',
+    image: vodafone,
+    demo: 'https://www.vodacombusiness.co.za/business/v-hub/',
   },
   {
     id: 'project-5',
-    name: 'Nyeusi Fest Site',
+    name: 'Genki',
     description:
-      'This is a demo concert website for a music festival called Nyeusi.',
+      'Travel health insurance for digital nomads.',
     tags: [
       {
-        name: 'nextjs',
+        name: 'react',
         color: 'blue-text-gradient',
       },
       {
-        name: 'supabase',
+        name: 'graphql',
         color: 'green-text-gradient',
       },
       {
-        name: 'css',
+        name: 'scss',
         color: 'pink-text-gradient',
       },
     ],
-    image: nyeusi,
-    repo: 'https://github.com/shaqdeff/Nyeusi-Fest-Site',
-    demo: 'https://shaqdeff.github.io/Nyeusi-Fest-Site/',
+    image: genki,
+    demo: 'https://genki-test.com/',
   },
 ];
 

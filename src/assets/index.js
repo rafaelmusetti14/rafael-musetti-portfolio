@@ -6,7 +6,7 @@ import worldmap from './backgrounds/world-map.png';
 import logo from './logo/logo-black.png';
 import logotext from './logo/logo-text-black.png';
 
-import shaq from './personal/shaq.png';
+import musetti from './personal/musetti.png';
 
 import backend from './icons/backend.png';
 import ux from './icons/ux.png';
@@ -44,6 +44,11 @@ import kelhel from './company/kelhel.png';
 import microverse from './company/microverse.png';
 
 import komikult from './projects/komikult.png';
+import vistajet from './projects/vistajet.png';
+import genki from './projects/genki.png';
+import vodafone from './projects/vodafone.png';
+import globo from './projects/globo.png';
+import cvc from './projects/cvc.png';
 import leaderboard from './projects/leaderboard.png';
 import math from './projects/math-magicians.png';
 import movie from './projects/movie-metro.png';
@@ -57,7 +62,7 @@ export {
   worldmap,
   logo,
   logotext,
-  shaq,
+  musetti,
   backend,
   ux,
   frontend,
@@ -87,6 +92,11 @@ export {
   tailwind,
   typescript,
   komikult,
+  vistajet,
+  genki,
+  vodafone,
+  globo,
+  cvc,
   leaderboard,
   math,
   movie,
